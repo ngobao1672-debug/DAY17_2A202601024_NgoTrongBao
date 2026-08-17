@@ -5,6 +5,7 @@ __pycache__/
 *.pyc
 data/golden_eval.json
 data/golden*.json
+/golden*.json
 !data/golden_eval.example.json
 .venv/
 venv/

@@ -52,14 +52,14 @@ class StudentMemory:
                 graph_id=graph_id,
                 query=q,
                 scope="episodes",
-                limit=8,
+                limit=4,
             )
         except Exception:
             results = self.client.graph.search(
                 graph_id=graph_id,
                 query=q,
                 scope="nodes",
-                limit=8,
+                limit=4,
             )
         return render_graph_search(results)
 

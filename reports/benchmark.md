@@ -5,22 +5,22 @@
 - Cases: **11**
 - Passed: **11/11**
 - Evidence hit rate: **100.0%**
-- Average retrieval latency: **1540.4 ms**
+- Average retrieval latency: **1061.8 ms**
 - Average token reduction vs full source context: **14.2%**
 
 | Case | Layer | Pass | Latency ms | Retrieved tokens | Token reduction | Missing / Error |
 | --- | --- | --- | ---: | ---: | ---: | --- |
 | E01 | short_term | PASS | 0.1 | 133 | 0.0% |  |
-| E06 | semantic | PASS | 821.8 | 148 | 67.8% |  |
-| E09 | long_term | PASS | 3346.0 | 818 | 0.0% |  |
-| E10 | short_term | PASS | 0.3 | 195 | 0.0% |  |
-| E02 | long_term | PASS | 6650.2 | 1358 | 0.0% |  |
-| E03 | long_term | PASS | 1768.7 | 1382 | 0.0% |  |
-| E04 | episodic | PASS | 308.6 | 284 | 0.0% |  |
-| E05 | episodic | PASS | 378.1 | 303 | 0.0% |  |
-| E07 | mixed | PASS | 1875.3 | 485 | 14.2% |  |
-| E11 | semantic | PASS | 291.9 | 146 | 74.2% |  |
-| E08 | long_term | PASS | 1503.2 | 1314 | 0.0% |  |
+| E06 | semantic | PASS | 769.1 | 148 | 67.8% |  |
+| E09 | long_term | PASS | 1616.9 | 810 | 0.0% |  |
+| E10 | short_term | PASS | 0.6 | 195 | 0.0% |  |
+| E02 | long_term | PASS | 2390.7 | 1350 | 0.0% |  |
+| E03 | long_term | PASS | 2093.6 | 1385 | 0.0% |  |
+| E04 | episodic | PASS | 419.0 | 570 | 0.0% |  |
+| E05 | episodic | PASS | 306.3 | 564 | 0.0% |  |
+| E07 | mixed | PASS | 2135.2 | 485 | 14.2% |  |
+| E11 | semantic | PASS | 276.0 | 146 | 74.2% |  |
+| E08 | long_term | PASS | 1671.8 | 1330 | 0.0% |  |
 
 ## Evidence excerpts
 
@@ -50,11 +50,11 @@
 
 ### E04 - episodic
 
-`EPISODE: Ten du an ca nhan cua toi la ORCHID-27. Toi thich Python va khong thich Java. Khi giai thich code, hay dung vi du ngan. EPISODE: Toi dang hoc async/await va hay nham coroutine voi Task. Neu sau nay gap chu de nay, hay giai thich bang timeline. EPISODE: TODO: hoan thanh benchmark report truoc thu Sau luc 16:00. Day la open loop LAB-REPORT-1600. EPISODE: Hom nay toi debug async HTTP. Toi da thu tang timeout len 60s nhung van fail. EPISODE: Cach hieu qua la reuse aiohttp ClientSession va dat concurrency=20. Reflection: loi chinh la connection churn, khong phai timeout threshold. Ma su co ASYNC-FIX-20. EPISODE: Da ghi nhan trajectory: increase timeout khong hieu qua; ClientSession + con`
+`EPISODE: Minh sap viet script ca nhan de tai hien su co latency, muon code dung ngon ngu minh thich khi lam mot minh, dong thoi bam sat playbook incident cua lab chu dung vo tang timeout. G EPISODE: Minh con mot open-loop phai nop truoc deadline, dong thoi muon ghi chu retry payment dung so lan toi da theo policy. Nac lai ma task/deadline con dang do, va gioi han retry chinh t EPISODE: Sep hoi chuan hoa backend du an cong ty, minh hay lan voi stack project rieng. Rieng du an cong ty cua Minh: bat buoc ngon ngu va framework nao? Python ca nhan co duoc dung backend EPISODE: Toi dang hoc async/await va hay nham coroutine voi Task. Neu sau nay gap chu de nay, hay giai thich bang timeline. EPISOD`
 
 ### E05 - episodic
 
-`EPISODE: Ten du an ca nhan cua toi la ORCHID-27. Toi thich Python va khong thich Java. Khi giai thich code, hay dung vi du ngan. EPISODE: Toi dang hoc async/await va hay nham coroutine voi Task. Neu sau nay gap chu de nay, hay giai thich bang timeline. EPISODE: TODO: hoan thanh benchmark report truoc thu Sau luc 16:00. Day la open loop LAB-REPORT-1600. EPISODE: Hom nay toi debug async HTTP. Toi da thu tang timeout len 60s nhung van fail. EPISODE: Hay kiem tra connection pool, lifecycle cua client va concurrency. EPISODE: Cach hieu qua la reuse aiohttp ClientSession va dat concurrency=20. Reflection: loi chinh la connection churn, khong phai timeout threshold. Ma su co ASYNC-FIX-20. EPISODE: `
+`EPISODE: Minh sap viet script ca nhan de tai hien su co latency, muon code dung ngon ngu minh thich khi lam mot minh, dong thoi bam sat playbook incident cua lab chu dung vo tang timeout. G EPISODE: Minh con mot open-loop phai nop truoc deadline, dong thoi muon ghi chu retry payment dung so lan toi da theo policy. Nac lai ma task/deadline con dang do, va gioi han retry chinh t EPISODE: Ten du an ca nhan cua toi la ORCHID-27. Toi thich Python va khong thich Java. Khi giai thich code, hay dung vi du ngan. EPISODE: Sep hoi chuan hoa backend du an cong ty, minh hay lan voi stack project rieng. Rieng du an cong ty cua Minh: bat buoc ngon ngu va framework nao? Python ca nhan co duoc dung backend E`
 
 ### E07 - mixed
 
